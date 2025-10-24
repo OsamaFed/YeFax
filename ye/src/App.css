@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'MTF Messy', sans-serif;
+}
+
+.App {
+  min-height: 100vh; 
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+              url('../public/Yewide.jpeg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.Main {
+  max-width: 650px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  border-radius: 24px;
+  padding: 45px 35px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.Main h1 {
+  color: #71E83F;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 22px;
+  text-shadow: 0 2px 8px rgba(113, 232, 63, 0.3);
+  letter-spacing: 0.3px;
+}
+
+.Main p {
+  color: #71E83F;
+  font-size: 1.7rem;
+  font-style: italic;
+  margin-bottom: 28px;
+  opacity: 0.95;
+  font-weight: 400;
+}
+
+.Main button {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 13px 30px;
+  border-radius: 28px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.Main button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.footer {
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.social-links a:hover {
+  color: #71E83F;
+  transform: translateY(-2px);
+}
+
